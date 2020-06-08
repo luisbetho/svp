@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+}
+*{
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+}
+#col-1{
+    line-height: 1.5;
+    color: #85a392;
+}
+body{
+    background: #f7f7f7;
+    font-family: 'Cairo';
+}
+hr{
+    background: #141425;
+    box-shadow: 2px 2px 2px 1px rgba(24, 21, 32, 0.212);   
+}
+h1{
+    color: #010a43;
+    font-weight: 500;
+}
+h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+.container{
+    padding: 10px 0px;
+    margin: auto;
+
+    .header{
+        height: 150px;
+        padding: 0 50px;
+        display: flex;
+        flex-flow: row nowrap;
+
+        .logo{
+            text-align: center;
+            flex: 1 1 auto;
+
+            img{
+                width: 110px;
+             }
+        }
+        .social-navbar{
+            flex: 2 1 auto;
+            /* text-align: right; */
+            display: flex;
+            flex-flow: column nowrap;
+
+            .redes{
+                padding-right:16px ;
+                flex: 1 1 auto;
+                display: flex;
+                flex-flow: row-reverse;
+                
+                div{
+                    padding-left: 10px;
+
+                    a{
+                        font-size: 25px;
+                        color: black;
+                        padding: 0 5px;
+                    }
+                    .fb:hover{
+                        color: rgb(39, 91, 168);
+                        transition: all .2s;
+                    }
+                    .yt:hover{
+                        color: red;
+                        transition: all .2s;
+                    }
+                    .tw:hover{
+                        color: skyblue;
+                        transition: all .2s;
+                    }
+                    
+                }   
+            }
+            .nabvar {
+				width:auto;
+                font-family:'Cairo';
+                text-align: right;
+                
+                ul, ol {
+                    list-style:none;
+                    .nav{
+                        li {
+                            display: inline-block;
+
+                            a {
+                                text-transform: uppercase;
+                                color:#565d47;
+                                text-decoration:none;
+                                padding:10px 12px;
+                                display:block;
+                            }
+                            ul {
+                
+                                text-align: left;
+                                display:none;
+                                position:absolute;
+                                min-width:140px;
+                            }
+                        } 
+                    }
+                }
+			}
+        }
+    }
+}
