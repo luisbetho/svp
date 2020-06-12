@@ -257,7 +257,7 @@ h2{
             align-content: stretch;
             align-items: stretch;
         }
-            .container-footer .col-ft{
+            .col-ft{
                 background: #f0f0f0;
                 padding: 0px 10px;
                 margin: 0.1em;
@@ -266,15 +266,19 @@ h2{
                 flex-basis: 200px;
             }
 
-                .container-footer .col-ft img{
+                .col-ft img{
                     width: 110px;
                 }
-                .container-footer .col-ft h4{
+                .col-ft h4{
                     color: #010a43;
                     font-family: 'Cairo';
                     line-height: 1.2;
                     font-size: 22px;
                     font-weight: 500;
+                }
+                .col-ft a{
+                    text-decoration: none;
+                    color: #70bd91 ;
                 }
     .btn-ft{
         text-align: center;
