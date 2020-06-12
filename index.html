@@ -6,7 +6,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Web/css/all.min.css">    
+    <link rel="stylesheet" href="Web/css/all.min.css">
+    <link rel="stylesheet" href="css/slider-responsive.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/responsiveslides.js"></script>
+    <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        maxwidth: 800,
+        speed: 800
+      });
+    });
+  </script>    
 </head>
 <body>
   <!-- CONTENEDOR PRINCIPAL -->
@@ -80,13 +95,16 @@
     </header>
     
     <!-- SLIDER -->
-    <div class="slider">
-      <ul>
+    <div id="wrapper">
+
+      <!-- Slideshow 1 -->
+      <ul class="rslides" id="slider1">
         <li><img src="images/1.jpg" alt=""></li>
         <li><img src="images/2.jpg" alt=""></li>
         <li><img src="images/3.jpg" alt=""></li>
         <li><img src="images/4.jpg" alt=""></li>
       </ul>
+  
     </div>
 
     <!-- CONTENIDO PRINCIPAL DE LA PAGINA -->
