@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Cairo';
+}
+
+header{
+    height: 50px;
+    color: #565d47;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#btn-menu{
+    display: none;
+}
+header  label{
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+ 
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu  ul li{
+    text-transform: uppercase;
+}
+.menu ul span{
+    display: none;
+}
+.menu ul ul{
+    display: none;
+}
+.menu a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #565d47;
+}
+.menu a:hover{
+    color: #82b31b;
+    transition: all .2s;
+}
+.menu a span{
+    margin-left: 10px;
+}
+.menu > ul > li > ul > li a:hover{
+    color: #f7f7f7;
+    background-color: #2b580c;
+    transition: all .2s;
+}
+.menu > ul > li:hover > ul{
+    z-index: 1;
+    background: rgba(240, 239, 241, 0.918);
+    display: block;
+    position: absolute;
+}
+.menu ul li ul li{
+    text-transform: capitalize;
+}
+.menu  ul li ul li:hover ul{
+    z-index: 1;
+    background: rgba(240, 239, 241, 0.918);
+    display: block;
+    position: absolute;
+}
+.nst-eqp{
+    right: -233px;
+    top: 180px;
+}
+.nst-eqp > li a:hover{
+    color: #f7f7f7;
+    background-color: #2b580c;
+    transition: all .2s;
+}
+.cmn{
+    right: -195px;
+    top: 240px;
+}
+.cmn > li a:hover{
+    color: #f7f7f7;
+    background-color: #2b580c;
+    transition: all .2s;
+}
+
+@media (max-width:850px){
+    header label{
+        display: block;
+    }
+    .menu{
+        background: #afafaf;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: all .3s;
+    }
+    .menu ul{
+        display: block;
+    }
+    .menu > ul > li > a{
+        text-transform: uppercase;
+    }
+    .menu ul span{
+        display: block;
+    }
+    .menu ul li:hover ul{
+        display: none;
+        position: static;
+    }
+    .menu > ul > li > ul > li:hover > ul{
+        display: none;
+        position: static;
+    }
+    .menu > ul > li > ul > li > ul > li:hover > ul{
+        display: none;
+        position: static;
+    }
+    .menu a span{
+        position: absolute;
+        right: 5px;
+    }
+    #btn-menu:checked ~ .menu{
+        transform: translateX(0%);
+    }
+    .menu ul ul a{
+        padding: 15px 40px;
+    }
+    .nst-eqp a{
+        padding: 15px 80px;
+    }
+}
