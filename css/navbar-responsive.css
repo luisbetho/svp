@@ -4,8 +4,7 @@
     box-sizing: border-box;
     font-family: 'Cairo';
 }
-
-header{
+.navbar{
     height: 50px;
     color: #565d47;
     display: flex;
@@ -15,7 +14,7 @@ header{
 #btn-menu{
     display: none;
 }
-header  label{
+.navbar  label{
     display: none;
     font-size: 20px;
     cursor: pointer;
@@ -24,6 +23,7 @@ header  label{
 .menu ul{
     display: flex;
     list-style: none;
+    padding-bottom: 10px;
 }
 .menu  ul li{
     text-transform: uppercase;
@@ -86,14 +86,15 @@ header  label{
     transition: all .2s;
 }
 
-@media (max-width:850px){
-    header label{
+@media (max-width:920px){
+    .navbar label{
         display: block;
     }
     .menu{
-        background: #afafaf;
+        z-index: 2;
+        background: #f7f7f7;
         position: absolute;
-        top: 50px;
+        top: 160px;
         left: 0px;
         width: 100%;
         transform: translateX(-100%);

@@ -84,87 +84,10 @@ h2{
                 transition: all .2s;
             } 
                         
-			/* Menu */
-            .nabvar {
-				width:auto;
-                font-family:'Cairo';
-                text-align: right;
-            }
-            
-			ul, ol {
-				list-style:none;
-			}
-			.nav > li {
-                display: inline-block;
-            }
-			.nav li a {
-                text-transform: uppercase;
-				color:#565d47;
-				text-decoration:none;
-				padding:10px 12px;
-				display:block;
-			}
 			
-			.nav li a:hover {
-                color:#16cf0f;
-                transition: all .2s;
-			}
-			
-			.nav li ul {
-                
-                text-align: left;
-				display:none;
-				position:absolute;
-				min-width:140px;
-			}
-			
-			.nav li:hover > ul {
-                z-index: 1;
-                background: rgba(240, 239, 241, 0.918);
-				display:block;
-			}
-			
-			.nav li ul li {
-				position:relative;
-            }
-            .nav > li > ul > li > a{
-                text-transform: capitalize;
-            }
-			.nav > li > ul > li > ul a{
-                text-transform: capitalize;
-            }
-			.nav li ul li .our-cl {
-				right:-217px;
-				top:0px;
-            }
-            .nav li ul li .our-cm {
-				right:-180px;
-				top:0px;
-            }
-            .nav > li > ul > li > a:hover{
-                color: #f7f7f7;
-                background-color: #2b580c;
-                transition: all .2s;
-            }
-            .nav > li > ul > li > .our-cl > li a:hover{
-                color: #f7f7f7;
-                background-color: #2b580c;
-                transition: all .2s;
-            }
-            .nav > li > ul > li > .our-cm > li a:hover{
-                color: #f7f7f7;
-                background-color: #2b580c;
-                transition: all .2s;
-            }
-    .rslides{
-        border-bottom: 1px solid #bdc2cc;
-        box-shadow: 2px 2px 2px 1px rgba(145, 141, 141, 0.3); 
-    }
-  
-                
     .section{
         border-bottom: 1px solid #bdc2cc;
-        box-shadow: 2px 2px 2px 1px rgba(145, 141, 141, 0.3);  
+        box-shadow: 0px 2px 2px 1px rgba(145, 141, 141, 0.3);  
         height: 100%;
         display:flex;
         flex-direction: row;
