@@ -25,20 +25,16 @@ h2{
 }
 
 .container{
-
-    /* background-color: #4d3e3e; */
     padding: 10px 0px;
     margin: auto;
 }
     .header{
-        /* background: #565d47; */
         height: 150px;
         padding: 0 50px;
         display: flex;
         flex-flow: row nowrap;
     }
         .logo{
-            /* background: #608315; */
             text-align: center;
             flex: 1 1 auto;
 
@@ -82,77 +78,7 @@ h2{
                 transition: all .2s;
             } 
                         
-			/* Menu */
-            .nabvar {
-				width:auto;
-                font-family:'Cairo';
-                text-align: right;
-            }
-            
-			ul, ol {
-				list-style:none;
-			}
-			.nav > li {
-                display: inline-block;
-            }
-			.nav li a {
-                text-transform: uppercase;
-				color:#565d47;
-				text-decoration:none;
-				padding:10px 12px;
-				display:block;
-			}
 			
-			.nav li a:hover {
-                color:#16cf0f;
-                transition: all .2s;
-			}
-			
-			.nav li ul {
-                
-                text-align: left;
-				display:none;
-				position:absolute;
-				min-width:140px;
-			}
-			
-			.nav li:hover > ul {
-                background: rgba(240, 239, 241, 0.918);
-				display:block;
-			}
-			
-			.nav li ul li {
-				position:relative;
-            }
-            .nav > li > ul > li > a{
-                text-transform: capitalize;
-            }
-			.nav > li > ul > li > ul a{
-                text-transform: capitalize;
-            }
-			.nav li ul li .our-cl {
-				right:-217px;
-				top:0px;
-            }
-            .nav li ul li .our-cm {
-				right:-180px;
-				top:0px;
-            }
-            .nav > li > ul > li > a:hover{
-                color: #f7f7f7;
-                background-color: #2b580c;
-                transition: all .2s;
-            }
-            .nav > li > ul > li > .our-cl > li a:hover{
-                color: #f7f7f7;
-                background-color: #2b580c;
-                transition: all .2s;
-            }
-            .nav > li > ul > li > .our-cm > li a:hover{
-                color: #f7f7f7;
-                background-color: #2b580c;
-                transition: all .2s;
-            }
 
     /* Slider */
     .slider{
@@ -232,14 +158,40 @@ h2{
         
         .main h2{
             font-size: 40px;
-            text-align: left;
+            text-align: center;
             color: #128d3b;
             padding-left: 20px;
         }
-        .main p{
+        .main h3{
+            font-size: 20px;
             text-align: left;
-            color: #85a392;
+            color: #173083;
             margin: 20px;
+        }
+        .grados{
+            /* background: rosybrown; */
+            margin: 0px;
+            padding: 20px;
+        }
+        .grados ul{
+            color: #565d47;
+            display: flex;
+            flex-flow: column;
+            justify-content: left;
+
+        }
+        .grados ul li{
+            flex: 1 1 auto;
+        }
+        .grados a{
+            text-decoration: none;
+            color: #010a43;
+            font-size: 20px;
+            padding: 5px 10px;
+        }
+        .grados a:hover{
+            color: rgb(56, 206, 26);
+            transition: all .3s;
         }
         
         .footer{

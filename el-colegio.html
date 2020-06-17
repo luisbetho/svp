@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="css/navbar-responsive.css">
     <link rel="stylesheet" href="css/el-colegio.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Web/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     
 </head>
 <body>
@@ -27,51 +28,55 @@
           <div><a href="https://twitter.com/explore" target="_blank" class="tw"><i class="fab fa-twitter"></i></a></i></div>
         </div>
 
-        <!-- MENU DE NAVEGACIÓN -->
-        <div class="nabvar">
-          <ul class="nav">
-            <li><a href="#">Nuestro Colegio</a>
+         <!-- MENU DE NAVEGACIÓN -->
+         <div class="navbar">
+          <input type="checkbox" id="btn-menu">
+          <label for="btn-menu" ><i class="fas fa-bars"></i></label>
+          <nav class="menu">
               <ul>
-                <li><a href="el-colegio.html">> El Colegio</a></li>
-                <li><a href="#">> Historia</a></li>
-                <li><a href="#">> Misión y Visión</a></li>
-                <li><a href="#">> Nuestro Equipo</a>
-                  <ul class="our-cl">
-                    <li><a href="#">> Junta Directiva</a></li>
-                    <li><a href="#">> Director</a></li>
-                    <li><a href="#">> Administración</a></li>
-                    <li><a href="#">> Coordinadores Academicos</a></li>
-                    <li><a href="#">> Docentes</a></li>
-                </ul>
-                </li>
-                <li><a href="#">> Comunidad</a>
-                  <ul class="our-cm">
-                    <li><a href="#">> Consejo de Padres</a></li>
-                    <li><a href="#">> Asociación de Padres</a></li>
-                    <li><a href="#">> Consejo Estudiantil</a></li>
-                  </ul>
-                </li>
+                  <li class="submenu"><a href="#">Nuestro Colegio <span class="fas fa-caret-down"></span></a>
+                      <ul>
+                          <li><a href="el-colegio.html"><i class="fas fa-angle-right"></i> El Colegio</a></li>
+                          <li><a href="#"><i class="fas fa-angle-right"></i> Historia</a></li>
+                          <li><a href="#"><i class="fas fa-angle-right"></i> Misión y Visión</a></li>
+                          <li class="submenu"><a href="#"><i class="fas fa-angle-right"></i> Nuestro Equipo <i  class="fas fa-caret-right"></i><span class="fas fa-caret-down"></span></a>
+                              <ul class="nst-eqp">
+                                  <li><a href="#"><i class="fas fa-angle-right"></i> Junta Directiva</a></li>
+                                  <li><a href="#"><i class="fas fa-angle-right"></i> Director</a></li>
+                                  <li><a href="#"><i class="fas fa-angle-right"></i> Administración</a></li>
+                                  <li><a href="#"><i class="fas fa-angle-right"></i> Coordinadores Academicos</a></li>
+                                  <li><a href="#"><i class="fas fa-angle-right"></i> Docentes</a></li>
+                              </ul>
+                          </li>
+                          <li class="submenu"><a href="#"><i class="fas fa-angle-right"></i> Comunidad <span class="fas fa-caret-down"></span><i class="fas fa-caret-right"></i></a>
+                              <ul class="cmn">
+                                <li><a href="#"><i class="fas fa-angle-right"></i> Consejo de Padres</a></li>
+                                <li><a href="#"><i class="fas fa-angle-right"></i> Asociación de Padres</a></li>
+                                <li><a href="#"><i class="fas fa-angle-right"></i> Consejo Estudiantil</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="submenu"><a href="#">Vida Escolar<span class="fas fa-caret-down"></span></a>
+                      <ul>
+                          <li><a href="#"><i class="fas fa-angle-right"></i> Calendario</a></li>
+                          <li><a href="#"><i class="fas fa-angle-right"></i> Noticias</a></li>
+                          <li><a href="#"><i class="fas fa-angle-right"></i> Orientación Profesional</a></li>
+                          <li><a href="#"><i class="fas fa-angle-right"></i> Orientación Psicoeducativa</a></li>
+                      </ul>
+                  </li>
+                  <li class="submenu"><a href="#">Admisiones<span class="fas fa-caret-down"></span></a>
+                      <ul>
+                          <li><a href="#"><i class="fas fa-angle-right"></i> Información General</a></li>
+                          <li><a href="#"><i class="fas fa-angle-right"></i> Ingreso</a></li>
+                          <li><a href="#"><i class="fas fa-angle-right"></i> Documentación</a></li>
+                          <li><a href="#"><i class="fas fa-angle-right"></i> Cronograma</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">Alumno</a></li>
+                  <li><a href="#">Contactenos</a></li>
               </ul>
-            </li>
-            <li><a href="#">Vida Escolar</a>
-              <ul>
-                <li><a href="#">> Calendario</a></li>
-                <li><a href="#">> Noticias</a></li>
-                <li><a href="#">> Orientación Profesional</a></li>
-                <li><a href="#">> Orientación Psicoeducativa</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Admisiones</a>
-              <ul>
-                <li><a href="#">> Información General</a></li>
-                <li><a href="#">> Ingreso</a></li>
-                <li><a href="#">> Documentación</a></li>
-                <li><a href="#">> Cronograma</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Alumno</a></li>
-            <li><a href="#">Contactenos</a></li>
-          </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -139,5 +144,6 @@
       </div>
     </footer>
   </div>
+  <script src="js/menu.js"></script>
 </body>
 </html>

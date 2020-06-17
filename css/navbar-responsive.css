@@ -41,7 +41,7 @@
     color: #565d47;
 }
 .menu a:hover{
-    color: #82b31b;
+    color: #173083;
     transition: all .2s;
 }
 .menu a span{
@@ -49,7 +49,7 @@
 }
 .menu > ul > li > ul > li a:hover{
     color: #f7f7f7;
-    background-color: #2b580c;
+    background-color: #173083;
     transition: all .2s;
 }
 .menu > ul > li:hover > ul{
@@ -68,12 +68,12 @@
     position: absolute;
 }
 .nst-eqp{
-    right: -233px;
+    right: -232px;
     top: 180px;
 }
 .nst-eqp > li a:hover{
     color: #f7f7f7;
-    background-color: #2b580c;
+    background-color: #173083;
     transition: all .2s;
 }
 .cmn{
@@ -82,7 +82,7 @@
 }
 .cmn > li a:hover{
     color: #f7f7f7;
-    background-color: #2b580c;
+    background-color: #173083;
     transition: all .2s;
 }
 
@@ -99,6 +99,9 @@
         width: 100%;
         transform: translateX(-100%);
         transition: all .3s;
+    }
+    .menu a{
+        padding: 10px 20px;
     }
     .menu ul{
         display: block;
@@ -124,6 +127,7 @@
     .menu a span{
         position: absolute;
         right: 5px;
+
     }
     #btn-menu:checked ~ .menu{
         transform: translateX(0%);
@@ -131,7 +135,5 @@
     .menu ul ul a{
         padding: 15px 40px;
     }
-    .nst-eqp a{
-        padding: 15px 80px;
-    }
+
 }

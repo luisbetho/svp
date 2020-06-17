@@ -25,20 +25,16 @@ h2{
 }
 
 .container{
-
-    /* background-color: #4d3e3e; */
     padding: 10px 0px;
     margin: auto;
 }
     .header{
-        /* background: #565d47; */
         height: 150px;
         padding: 0 50px;
         display: flex;
         flex-flow: row nowrap;
     }
         .logo{
-            /* background: #608315; */
             text-align: center;
             flex: 1 1 auto;
 
@@ -232,16 +228,46 @@ h2{
         
         .main h2{
             font-size: 40px;
-            text-align: left;
+            text-align: center;
             color: #128d3b;
             padding-left: 20px;
         }
-        .main p{
+        .main h3{
+            font-size: 20px;
             text-align: left;
-            color: #85a392;
+            color: #173083;
             margin: 20px;
+            padding-left: 10px;
         }
-        
+        .grados{
+            margin: 0px;
+            padding: 20px 0px;
+        }
+        .grados ul{
+            padding: 10px 20px;
+            height: 100%;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: stretch;
+            align-items: stretch;
+        }
+        .grados ul li{
+            color: #010a43;
+            padding: 5px 10px;
+            margin: 0.1em;
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+        .grados a{
+            padding: 5px 10px;
+        }
+        .grados img{
+            width: 120px;
+            border-radius: 5px;
+        }
+
         .footer{
             background: #f0f0f0;
             padding: 20px 40px;

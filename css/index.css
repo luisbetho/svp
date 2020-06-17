@@ -48,9 +48,7 @@ h2{
             width: 110px;
          }
         .social-navbar{
-            /* background: #131b61; */
             flex: 2 1 auto;
-            /* text-align: right; */
             display: flex;
             flex-flow: column nowrap;
         }
@@ -58,7 +56,6 @@ h2{
             .redes{
                 padding-right:16px ;
                 flex: 1 1 auto;
-                /* background: #520e1f; */
                 display: flex;
                 flex-flow: row-reverse;
                 
@@ -108,9 +105,7 @@ h2{
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 35%;
-            
-            
+            width: 150px;
         }
         .main h2{
             text-align: center;
@@ -179,7 +174,7 @@ h2{
             align-content: stretch;
             align-items: stretch;
         }
-            .container-footer .col-ft{
+            .col-ft{
                 background: #f0f0f0;
                 padding: 0px 10px;
                 margin: 0.1em;
@@ -188,10 +183,10 @@ h2{
                 flex-basis: 200px;
             }
 
-                .container-footer .col-ft img{
+                .col-ft img{
                     width: 110px;
                 }
-                .container-footer .col-ft h4{
+                .col-ft h4{
                     color: #010a43;
                     font-family: 'Cairo';
                     line-height: 1.2;
@@ -202,9 +197,26 @@ h2{
         text-align: center;
         }
         .btn-ft img{
-            width: 15%;
-            padding: 20px;
+            width: 200px;
+            padding: 10px;
         }
 
+@media(max-width:500px){
+    .logo img{
+        width: 90px;
+     }
+    .btn-ft img{
+        width: 150px;
+    }
+    .main{
+        padding: 20px 10px 20px 10px;
+    }
+    .main img{
+        width: 120px;
+    }
+    .col-ft img{
+        width: 90px;
+    }
+}
 
 
