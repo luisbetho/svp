@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title></title>
+
+    <!-- firestore -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Agregar Alumno</h1>
+      <input type="text" id="nombre" placeholder="Normbres" class="form-control my-3">
+      <input type="text" id="apellido" placeholder="Apellidos" class="form-control my-3">
+      <input type="text" id="grado" placeholder="Grado" class="form-control my-3">
+      <input type="text" id="seccion" placeholder="Seccion" class="form-control my-3">
+      <input type="text" id="dni" placeholder="DNI" class="form-control my-3">
+      <input type="text" id="celular" placeholder="Nro Celular" class="form-control my-3">
+      <input type="text" id="correo" placeholder="E-Mail" class="form-control my-3">
+      <button class="btn btn-info" id="boton" onclick="guardar()">Guardar</button>
+    </div>
+    <div class="container">
+      <table class="table my-5">
+        <thead>
+          <tr>
+            <th scope="col">NOMBRE</th>
+            <th scope="col">APELLIDO</th>
+            <th scope="col">GRADO</th>
+            <th scope="col">SECCION</th>
+            <th scope="col">DNI</th>
+            <th scope="col">CELULAR</th>
+            <th scope="col">CORREO</th>
+            <th scope="col">ELIMINAR</th>
+            <th scope="col">EDITAR</th>
+          </tr>
+        </thead>
+        <tbody id="tabla">
+        </tbody>
+      </table>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
