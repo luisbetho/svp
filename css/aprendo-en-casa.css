@@ -218,7 +218,6 @@ h2{
         }    
         
         .main{
-            /* background: blueviolet; */
             padding: 20px 10px 120px 10px;
             margin: 0.1em;
             flex-grow: 3;
@@ -238,6 +237,11 @@ h2{
             color: #173083;
             margin: 20px;
             padding-left: 10px;
+        }
+        .main p{
+            text-align: left;
+            color: #173083;
+            margin: 20px 0px 20px 30px;
         }
         .grados{
             margin: 0px;
@@ -264,8 +268,7 @@ h2{
             padding: 5px 10px;
         }
         .grados img{
-            width: 120px;
-            border-radius: 5px;
+            width: 150px;
         }
 
         .footer{
